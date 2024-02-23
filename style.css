@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+header, main, footer {
+    padding: 0 10vh;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    align-items: center;
+}
+
+header > div.right {
+    display: grid;
+    justify-content: end;
+}
+
+button.add-book {
+    width: 20vh;
+    padding: 15px 30px;
+    font-size: large;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 30px;
+}
+
+main {
+    grid-area: main;
+    background-color: gray;
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+footer {
+    grid-area: footer;
+    border: 1px black solid;
+}
