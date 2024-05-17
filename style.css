@@ -44,6 +44,14 @@ main {
     grid-template: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 footer {
     grid-area: footer;
     border: 1px black solid;
