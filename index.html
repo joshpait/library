@@ -13,11 +13,25 @@
             <h1 class="title">My Library</h1>
         </div>
         <div class="right">
-            <button id="addBook">Add Book</button>
-        </div>
+            <button id="openModalButton">Add Book</button>
+            
     </header>
     <main>
         <div class="container">
+            <div id="bookModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Add a New Book</h2>
+                    <input type="text" id="modalBookTitle" placeholder="Enter Book Title">
+                    <textarea name="" id="modalBookAuthor" placeholder="Enter Book Author"></textarea>
+                    <input type="text" id="modalBookPages" placeholder="Enter Number of Pages">
+                    <label>
+                        <input type="checkbox" id="modalBookRead"> Already read?
+                    </label>
+                    <button id="modalAddBookButton">Add Book</button>
+                </div>
+            </div>
+        </div>
             <div id="cardContainer"></div>
         </div>
     </main>
