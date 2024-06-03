@@ -16,15 +16,12 @@ header, main, footer {
 
 header {
     grid-area: header;
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
+    max-width: 100%;
     background-color: white;
     align-items: center;
-}
-
-header > div.right {
-    display: grid;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 button.add-book {
@@ -44,7 +41,19 @@ main {
     grid-template: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+#cardContainer {
+    display: flex;
+    gap: 10px;
+}
+
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 30vh;
+    background-color: #fefefe;
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
