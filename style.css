@@ -7,7 +7,7 @@ body {
     grid-template-areas: "header"
                          "main"
                          "footer";
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 10vh 80vh auto;
 }
 
 header, main, footer {
@@ -38,7 +38,14 @@ main {
     grid-area: main;
     background-color: gray;
     display: grid;
-    grid-template: repeat(auto-fill, minmax(250px, 1fr));
+    overflow-y: auto;
+}
+
+#cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 19px;
+    padding: 16px;
 }
 
 #cardContainer {
@@ -47,6 +54,7 @@ main {
 }
 
 .card {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,10 +63,24 @@ main {
     width: 30vh;
     background-color: #fefefe;
     border: 1px solid black;
+=======
+    position: relative;
+    width: 13vw;
+    /* border: 1px solid black; */
+    background-color: #fefefe;
+>>>>>>> 3250cdc (Added css)
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.remove-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .modal {
@@ -96,5 +118,5 @@ main {
 
 footer {
     grid-area: footer;
-    border: 1px black solid;
+    height: 10vh;
 }

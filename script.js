@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <h3>by ${author}</h3>
         <p>Number of pages: ${pages}</p>
         <p>Read? ${isChecked ? 'Yes' : 'No'}</p>
+        <br><br>
         <button class='remove-button'>Remove</button>
         `;
         card.innerHTML = cardInnerHTML;
