@@ -54,21 +54,10 @@ main {
 }
 
 .card {
-<<<<<<< HEAD
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    width: 30vh;
-    background-color: #fefefe;
-    border: 1px solid black;
-=======
     position: relative;
     width: 13vw;
     /* border: 1px solid black; */
     background-color: #fefefe;
->>>>>>> 3250cdc (Added css)
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
